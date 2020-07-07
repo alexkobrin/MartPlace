@@ -1,3 +1,97 @@
-
 @import '_global';
 @import '_vars';
+@import '_fonts';
+
+//   start header
+
+.header {
+    background-color: #eef1f3;
+    &__top {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        cursor: pointer;
+        &-text {
+            
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 30px;
+            color: $text;
+            padding-left: 60px;
+            padding-top: 10px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                width: 50px;
+                height: 50px;
+                background-image: url(../images/Logo.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            span {
+                color: #0674ec;
+            }
+        }
+        
+        
+    }
+
+        &__btn {
+            margin-left: auto;
+            margin-right: 50px;
+            width: 140px;
+            height: 36px;
+            padding: 11px 16px 13px;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 400;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 18px;
+            color: #fff;
+            background-color: #0674ec;
+            text-align: center;
+            vertical-align: center;
+        }
+        &__box {
+                    min-width: 140px;
+                    margin-right: 52px;
+                    a + a {
+                        margin-left: 33px;
+                    }
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+}
+.header__account{
+    min-width: 172px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+
+}
+.header__user {
+    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    span {
+        display: block;
+        color: #0674ec;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+}
+
+
+// end header
