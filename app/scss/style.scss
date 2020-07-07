@@ -62,9 +62,9 @@
         }
         &__box {
                     min-width: 140px;
-                    margin-right: 52px;
+                    margin-right: 40px;
                     a + a {
-                        margin-left: 33px;
+                        margin-left: 31px;
                     }
                     img {
                         vertical-align: middle;
@@ -80,7 +80,6 @@
 
 }
 .header__user {
-    
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -92,6 +91,68 @@
     }
 
 }
+
+ .header__down{
+    background-color: #fff;
+ }
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+
+.menu__list {
+    li {
+        display: inline-block;
+        text-transform: uppercase;
+
+        &+li {
+            margin-left: 31px;
+        }
+    }
+
+    a {
+        color:$text;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 42px;
+    }
+}
+
+.header__search { 
+
+position: relative;
+    input{ 
+        min-width: 360px;
+        height: 46px;
+        border-radius: 23px;
+        border: 1px solid #d9dfe5;
+        padding: 16px 25px;
+        font-size: 15px;
+        line-height: 30px;
+       
+        &::placeholder{
+            color: $input;
+        }
+
+    }
+
+    button{
+        position: absolute;
+        right: 0;
+        width: 70px;
+        height: 46px;
+        border-radius: 23px;
+        background-color: $blue;
+        outline: none;
+        border: none;
+    }
+}
+
+
+
 
 
 // end header
