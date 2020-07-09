@@ -144,6 +144,7 @@
         padding: 16px 85px 16px 25px;
         font-size: 15px;
         line-height: 30px;
+
         &::placeholder {
             color: $input;
         }
@@ -207,7 +208,7 @@
         margin-bottom: 65px;
     }
 
-    &__btn{
+    &__btn {
         width: 190px;
         height: 55px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -219,6 +220,7 @@
         border: none;
         margin: 0 15px;
     }
+
     &__btn-right {
         background-color: $bluegr;
         background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);
@@ -230,6 +232,7 @@
     .main__search-inner {
         position: relative;
     }
+
     &__search {
         position: absolute;
         top: -67.5px;
@@ -244,8 +247,8 @@
         border-radius: 6px;
         background-color: #ffffff;
 
-        form{
-             position: relative;
+        form {
+            position: relative;
         }
 
         input {
@@ -257,14 +260,15 @@
             border: 1px solid #dcdcdc;
             margin-right: 25px;
             padding: 0 200px 0 30px;
-            &::placeholder{
+
+            &::placeholder {
                 color: $grey;
-               
+
             }
-           
+
         }
 
-        select{
+        select {
             position: absolute;
             left: 617px;
             width: 190px;
@@ -272,16 +276,17 @@
             border-top-right-radius: 4px;
             border-bottom-right-radius: 4px;
             border: 1px solid #dcdcdc;
-            appearance: none;       
-            background-image: url(../images/icons/arrows.png);  
+            appearance: none;
+            background-image: url(../images/icons/arrows.png);
             background-repeat: no-repeat;
             background-position: 89% 55%;
             color: $select;
             font-size: 16px;
             padding-left: 18px;
-            
+
         }
-        button{
+
+        button {
             width: 223px;
             height: 55px;
             border-radius: 4px;
@@ -294,39 +299,41 @@
     }
 }
 
-.a12{
+.a12 {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: -12.5px;
     width: 1110px;
-    height: 135px;    
-    border-radius: 6px;   
-    background-color: #ffffff;   
+    height: 135px;
+    border-radius: 6px;
+    background-color: #ffffff;
     opacity: 0.5;
 }
-.v23{
+
+.v23 {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: -25.5px;
     width: 1080px;
-    height: 135px;   
-    border-radius: 6px;   
-    background-color: #ffffff;   
+    height: 135px;
+    border-radius: 6px;
+    background-color: #ffffff;
     opacity: 0.5;
 }
 
 // end main section 
 // start features section 
 
-.features{
-    
+.features {
 
-    &__inner{
+
+    &__inner {
         display: flex;
         justify-content: space-between;
     }
+
     &__item {
         margin: 180px 0 120px;
         text-align: center;
@@ -334,25 +341,182 @@
         width: 100%;
         padding: 43px 35px 49px;
         transition: all .5s;
-        &:hover{
+
+        &:hover {
             box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
             border-radius: 4px;
             cursor: pointer;
         }
-        img{
+
+        img {
             margin-bottom: 35px;
         }
+
         &-title {
             font-size: 24px;
             margin-bottom: 35px;
         }
+
         &-text {
             font-size: 16px;
             color: $select;
         }
-         
+
     }
 
 }
 
 // end features section 
+// start slider section 
+
+.slider {
+    background-color: $slider-bg;
+    min-height: 850px;
+    padding: 115px 0;
+}
+
+ 
+.slider__title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 30px;
+    padding: 40px 30px;
+    margin-bottom: 38px;
+     &-bg {
+           max-width: 110px;
+           width: 100%;
+           height: 45px;
+           border-radius: 23px;
+           background-color: $purple;
+    };
+     
+}
+
+ 
+.slider-item {
+    box-shadow: 0 2px 30px rgba(147, 155, 168, 0.1);
+    border-radius: 4px;
+    display: flex;
+   
+            .img{
+                    background-position-y: bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;                   
+                     width: 555px;     
+            }
+
+    &__box{
+        max-width: 585px;
+        background-color: #fff;
+        padding: 45px 50px 0px;    
+        height: 450px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &__author {
+        margin-bottom: 25px;
+        &--firm {
+            position: relative;
+            font-size: 15px;
+            line-height: 30px;
+            padding-left: 40px;
+            margin-right: 21px;
+
+            &::before {
+                position: absolute;
+                content: "\f111";
+                font-family: 'icomoon';
+                left: 0;
+                color: $purple;
+                font-size: 30px;
+            }
+        }
+
+        &--product {
+            position: relative;
+            font-size: 15px;
+            line-height: 30px;
+            padding-left: 25px;
+            color: $purple;
+
+            &::before {
+                position: absolute;
+                content: "\e900";
+                font-family: 'icomoon';
+                left: 0;
+                font-size: 16px;
+            }
+
+        }
+        
+    } 
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        color:$select;
+        margin-bottom: 40px;
+    }
+
+    &__filter{
+        padding: 5px 16px ;
+        height: 28px;
+        border-radius: 14px;
+        font-size: 15px;
+        background-color: $link-bg;
+        text-align: center;
+        margin-bottom: 40px;
+        & + a{
+            margin-left: 3px;
+        }
+    }
+    &__icons{
+        padding-left: 25px;
+        font-size: 15px;
+        color: $select;
+        svg {
+            fill: #7347c1;
+            margin-right: 10px;
+        }
+     
+    }
+    &__icons.icons-2{
+        padding-left: 25px;
+        font-size: 15px;
+        color: $cart;
+        svg {
+            fill: $cart;
+            margin-right: 10px;
+        }
+    }
+    &__cost {
+        border-top: 1px solid #ececec;
+        padding-top: 23px;
+    }
+}
+.rate-star{
+    display: inline-block;
+    margin-left: 140px;
+    cursor: pointer;
+}
+
+.slick-arrow{
+    position: absolute;
+    border: none;
+    top: -110px;
+    right: 45px;
+    background-color: transparent;
+    cursor: pointer;  
+}
+.slick-prev{
+    right: 100px;
+    
+}
+
+// end slider section 

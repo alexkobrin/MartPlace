@@ -41,6 +41,8 @@ input{
     padding: 0 30px;
     margin: 0 auto; 
 }
+
+
 @media (max-width: 720px) {
 
     .container-fluid {  
@@ -48,4 +50,19 @@ input{
     }
     
    
+}
+
+
+.btn { 
+    padding: 6px 16.5px 6px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    color: #fff;
+    background-color: $blue;
+    text-align: center;
+    vertical-align: center;
+    display: inline-block;
+    border: none;
 }
