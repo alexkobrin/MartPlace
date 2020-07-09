@@ -384,7 +384,7 @@
     border-radius: 4px;
     background-color: #ffffff;
     font-size: 30px;
-    padding: 40px 30px;
+    padding: 32px 30px;
     margin-bottom: 38px;
      &-bg {
            max-width: 110px;
@@ -509,7 +509,7 @@
 .slick-arrow{
     position: absolute;
     border: none;
-    top: -110px;
+    top: -103px;
     right: 45px;
     background-color: transparent;
     cursor: pointer;  
@@ -520,3 +520,184 @@
 }
 
 // end slider section 
+// start product section 
+.products {
+    min-height:1725px;
+    background-color:$prod-bg ;
+    padding: 120px 0;
+    &-up__title {
+        margin-bottom: 26px;
+    }
+
+    &__filter-inner {
+    padding: 30px 30px ;
+    box-shadow: 0 1px 2px rgba(90, 93, 100, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    }
+    &__inner-btn{
+       
+        button{
+            max-width: 136px;
+            height: 32px;
+            padding: 5px  19px ;
+            border-radius: 16px;
+            background-color: $link-bg;
+            border: none;
+            color: $btn-text;
+            font-size: 15px;
+            transition: all .5s;
+            cursor: pointer;
+            & + button {
+                margin-left: 7px;
+            }
+            &:hover {
+                    background-color: $cart;
+                    color: #fff; 
+            }
+        }
+    }
+}
+.product__item {
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+     &-inner-box {
+        max-width: 361px;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
+        margin-bottom: 30px;
+
+        
+        .product__item-img {
+            min-height: 230px;
+            background-repeat: no-repeat;
+            display: block;
+            background-position: center;
+            background-size: cover;  
+          }    
+     }
+
+     &-box {
+        padding: 29px 25px 10px ;
+    }
+
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 14px;
+        
+    }
+    &__author {
+        margin-bottom: 29px;
+        &--firm {
+            position: relative;
+            font-size: 15px;
+            line-height: 30px;
+            padding-left: 40px;
+            margin-right: 21px;
+
+            &::before {
+                position: absolute;
+                content: "\f111";
+                font-family: 'icomoon';
+                left: 0;
+                color: $purple;
+                font-size: 30px;
+            }
+        }
+
+        &--product {
+            position: relative;
+            font-size: 15px;
+            line-height: 30px;
+            padding-left: 25px;
+            color: $purple;
+
+            &::before {
+                position: absolute;
+                content: "\e900";
+                font-family: 'icomoon';
+                left: 0;
+                font-size: 16px;
+            }
+
+        }
+        
+    } 
+    &-text {
+        font-size: 16px;
+        line-height: 30px;
+        color:$select;
+        margin-bottom: 33px;
+    }
+
+   
+    &__icons{
+        padding-left: 10px;
+        font-size: 15px;
+        color: $select;
+        svg {
+            fill: #7347c1;
+            margin-right: 5px;
+        }
+     
+    }
+    &__icons.icons-2{
+        padding-left: 10px;
+        font-size: 15px;
+        color: $cart;
+        svg {
+            fill: $cart;
+            margin-right: 10px;
+        }
+    }
+    &-cost {
+        border-top: 1px solid #ececec;
+        padding-top: 14px;
+        
+    }
+    
+}
+.rate-star.star1 {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.product__item-all {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+           
+    button{
+        width: 190px;
+        height: 55px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 28px;
+        background-color: $blue;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        
+    }
+
+
+
+ 
+}
+
+
+
+
+
+
+
+
+
+// end product section 

@@ -15,7 +15,7 @@ $ (function() {
           readOnly: true
         });
         
-        // var mixer = mixitup('.products__inner-box');
+        var mixer = mixitup('.product__item-inner');
   
     });
     
