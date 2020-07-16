@@ -14,8 +14,24 @@ $ (function() {
           rating: 4.5,
           readOnly: true
         });
+
+        $('.header__account').on('click', function(){
+          $('.user__menu').slideToggle()
+        })
+        $('.header__basket').on('click', function(){
+          $('.basket__menu').slideToggle()
+        })
+        $('.header__message').on('click', function(){
+          $('.message__menu').slideToggle()
+        })
+        $('.header__notification').on('click', function(){
+          $('.notification__menu').slideToggle()
+        })
+
+
         
         var mixer = mixitup('.product__item-inner');
+
   
     });
     
