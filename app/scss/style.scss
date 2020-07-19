@@ -177,6 +177,7 @@
 }
 
 
+
 .menu__list {
     li {
         display: inline-block;
@@ -230,6 +231,7 @@
 //  start dropdown menu 
 //  start dropdown notification__menu
 .notification__menu {
+    display: none;
     position: absolute; 
     box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
     border-radius: 0 0 3px 3px;
@@ -616,10 +618,214 @@ position: relative;
 
         }
     }
-
-
-
     //  end dropdown menu 
+    //  start dropdown pages   
+    .all-product
+     {
+        position: relative;  
+        &:hover {
+            color: $blue;
+            .all-product__dropdown {
+             height: 304px;
+        }
+        }        
+    }
+      .home   {
+        position: relative;
+        &:hover  {
+            color: $blue;
+            .home__dropdown {
+             height: 170px;
+        }
+        }        
+    }
+    .wordpress__link, .wordpress  {
+        position: relative;
+        &:hover   {
+            color: $blue;
+            .wordpress__dropdown {
+             height: 440px;
+        }
+        }        
+    }
+
+
+
+
+     
+    .pages {
+        position: relative;
+        &:hover   {
+            color: $blue;
+            .pages__inner {
+             height: 603px;
+        }
+        }        
+        
+    }
+    
+    .pages__inner {
+        position: absolute;
+        left: -458px;
+        right: 0;
+        top: 70px;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.6s;
+        display: flex;
+        transition: all 0.6s;
+        width: 1140px ;
+         
+        box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+        border-radius: 0 0 3px 3px;
+        background-color: #ffffff;  
+       
+        .pages__title {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 40px;
+            color: #000000;
+            padding : 34px 0  15px 0;
+            border-bottom: 1px solid  #e8ebf0;
+            
+        } 
+    }
+
+    .pages__dropdown-1 {
+        max-width: 470px;
+        margin-right: 40px;
+         padding-left: 27px;
+        
+        
+    }
+    .pages__dropdown-2 {
+        max-width: 170px;
+        margin-right: 40px;
+    }
+    .pages__dropdown-3 {
+        padding-bottom: 35px;
+         
+    }
+
+    .pages__inner .pages__dropdown-colum--1,
+    .pages__inner .pages__dropdown-colum--3{
+            max-width: 410px;
+            display: block;
+            column-count: 2;
+            column-gap: 50px;  
+            margin-top: 10px;
+            .pages__list {
+                width: 180px;
+            }
+            li {
+                margin-left: 0;            
+            }
+            a{
+                max-width: 180px;
+                min-width: 100px;
+                color: #54667a;
+                font-size: 15px;
+                line-height: 39px;
+                text-transform: capitalize;
+                &:hover {
+                    border-radius: 2px;
+                    background-color: $cart;
+                     width: 180px;
+                     padding-left: 5px;
+                     color: #fff;
+                }
+            }
+    }
+    .pages__dropdown-colum--2 {
+        display: block;
+        margin-top: 10px; 
+        li{
+            text-transform: capitalize; 
+        }
+       
+        li +li {
+            margin-left: 0; 
+           
+        }
+        a{
+            max-width: 180px;
+            min-width: 170px;
+            color: #54667a;
+            font-size: 15px;
+            line-height: 39px;
+            &:hover {
+                border-radius: 2px;
+                background-color: $cart;
+                 width: 185px;
+                 padding-left: 5px;
+                 color: #fff;
+            }
+        }
+}
+
+ 
+
+
+       .all-product__dropdown,
+       .home__dropdown,
+       .wordpress__dropdown  
+       {
+        overflow: hidden;
+        transition: all 0.6s;
+        position: absolute;
+        top:70px;
+        left: 0px;
+        width: 270px ;
+        height: 0;
+        box-shadow: 0 5px 40px rgba(82, 85, 90, 0.2);
+        border-radius: 0 0 3px 3px;
+        background-color: #ffffff;       
+        
+    }
+      
+
+
+
+
+    .all-product__dropdown .all-product__list,
+    .home__dropdown .home__list,
+    .wordpress__dropdown .wordpress__list
+    
+     {
+        padding: 20px;
+        li {
+         height: 44px;  
+         margin-left: 0; 
+         display: block;        
+        }
+        a {
+            padding-left: 5px;
+            width: 100%;
+            font-size: 15px;
+            line-height: 44px;
+             text-transform: capitalize;
+            color: #54667a;
+            &:hover {
+                background-color: $blue;
+                border-radius: 2px;
+                color: #fff;
+                }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //  end dropdown pages 
     // end header
     // start main section 
 
