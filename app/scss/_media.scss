@@ -1,0 +1,136 @@
+@media (max-width: 1300px) {
+    .pages {
+        &:hover {
+            color: $blue;
+            .pages__inner {
+             height: 603px;
+             overflow-x: scroll;
+             width: 450px;
+        }
+        }        
+        
+    }
+}
+@media (max-width: 920px) {
+    .header__menu {
+        .menu__btn {
+            display: block;
+            }
+        }
+        .pages__inner {
+             
+            left: 0;
+            right: 0;
+            top: 50px;
+            
+        }    
+
+
+    .menu__list   {
+        display: none;
+        position: absolute;
+        top: 181px;
+        z-index: 1;
+        border-radius: 10px;
+         width: 90%;
+         background-color: #fff;
+        li {
+               display: block;
+               padding-left: 10px;
+               
+        }
+        li + li {
+            margin-left: 0;
+        }
+    }
+    .all-product__dropdown,
+       .home__dropdown,
+       .wordpress__dropdown  
+       {
+        top:50px;
+        left: 0;    
+    }
+}
+@media (max-width:800px) {
+    .header__btn  {
+        display: none;
+    }
+}
+@media (max-width:650px) {
+    .header__logo-text {
+        font-size: 0;
+    }
+ 
+   .basket__box {
+       margin-left: auto;
+   }
+}
+@media (max-width:500px) {
+    .notification__box  {
+        display: none;
+    }
+    .message__box {
+        display: none;
+    }
+    .lnr-users{
+        display: block;
+    }
+    .header__box {
+        transform: translateX(200px);
+        transition: all 0.5s;
+    }
+    .header__box.active {
+        transform: translateX(-100px);
+        transition: all 0.5s;
+    }
+    .header__search  {
+        input {
+            min-width: 300px;
+        }   
+    }
+
+    .pages {
+        &:hover {
+            .pages__inner {
+             
+             width: 250px;
+        }
+        } 
+    }       
+
+
+}
+@media (max-width:440px) {
+    
+    .header__basket {
+        display: none;
+    }
+    .header__user {
+        margin-right: auto;
+        margin-left: 10px;
+    }
+   
+}
+
+@media (max-width:400px) { 
+    .header__search  {
+        input {
+            min-width: 240px;
+             max-width: 240px;
+              
+        }   
+    }
+}
+
+
+@media (max-width:370px) {
+    .header__logo.active {
+        transform: translateX(-100px);
+        transition: all 0.5s;
+    }
+    .header__logo {
+        
+        transition: all 0.5s;
+    }
+
+}

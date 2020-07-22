@@ -8,6 +8,13 @@ html {
 *::after {
     box-sizing: inherit;
 }
+html,
+body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    
+}
 
 
  a {
@@ -87,3 +94,24 @@ input{
     };
      
 }
+  
+    .title-box {
+        max-width: 708px;
+        margin: 0 auto;
+        text-align: center;
+
+    .title {
+        font-size: 36px;
+        margin-bottom: 30px;
+            span{
+        color:#0674ec;
+            }
+    }
+    .title-text  {
+        font-size: 16px;
+        color: rgb(85, 85, 85);
+        line-height: 30px;
+        margin-bottom: 60px;
+    }
+    }
+ 
