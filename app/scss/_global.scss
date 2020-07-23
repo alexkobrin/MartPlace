@@ -114,4 +114,12 @@ input{
         margin-bottom: 60px;
     }
     }
+    @mixin ftext {
+        &::before {
+            font-family: 'Linearicons-Free';
+            padding-right: 10px;
+            font-size: 15px;
+           }
+        
+    }
  

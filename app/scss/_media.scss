@@ -11,6 +11,25 @@
         
     }
 }
+@media (max-width: 1020px) {
+    .footer__inner {
+        flex-wrap: wrap;
+        .martplace {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+        .footer__company,
+        .footer__support {
+            max-width: 50%;
+            margin-bottom: 30px;
+        }
+        .footer__newsletter {
+            max-width: 100%;
+        }
+
+    }
+}
+
 @media (max-width: 920px) {
     .header__menu {
         .menu__btn {
@@ -119,6 +138,22 @@
              max-width: 240px;
               
         }   
+    }
+    .footer__inner {
+        .footer__newsletter {
+           input{
+               width: 280px;
+           }
+           button{   
+            right: 80px;
+            top: 0;
+        }
+            
+        }
+        .footer__newsletter .footer__social .footer__icon + .footer__icon {
+            margin-left: 7px;
+        }
+
     }
 }
 
