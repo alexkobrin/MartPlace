@@ -32,6 +32,23 @@ body{
     font-weight: 400;
     font-size: 14px;
 }
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+
+
+
+
 input{
     outline: none;
 }
@@ -122,4 +139,66 @@ input{
            }
         
     }
+
+
+    .breadcrumbs{
+        &__inner{
+            margin: 0 auto;
+            padding: 35px 0 30px;
+            overflow: hidden;
+            width: 250px;
+            color: #fff;
+        }
+        &__list {
+            li{
+                display: inline-block;
+                position: relative;
+                color: #fff;
+                
+                & + li{
+                    padding-left: 24px;
+                    &::before{
+                        content: '/';
+                        position: absolute;
+                        left: 8px;
+                    }
+                }
+                &:last-child {
+                    a , span {
+                        color: #bfcad7;
+                    }
+                }
+            }
+            a{
+                color: #fff;
+            }
+        }
+    }
  
+    @mixin asidet {
+        &::before {
+            position: absolute;
+            font-family: 'Linearicons-Free';
+            font-size: 12px;
+            color: rgb(85, 85, 85);
+            right: 0;
+
+        }
+        
+    }
+
+    .categorie-list {
+        .lnr-chevron-right {
+            font-family: 'Linearicons-Free';
+            &::before{
+                margin-right: 10px;
+                font-size: 12px;
+                color: rgb(116, 123, 134);
+            }
+        }
+    }
+
+
+   
+     
+      
