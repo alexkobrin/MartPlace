@@ -2661,7 +2661,7 @@ select {
         width: 100%;
         color: #fff;
         margin-left: 0;
-        text-align-last: left;
+        text-align: left;
         .breadcrumbs__list {
             margin-bottom: 25px;
         }
@@ -3232,6 +3232,22 @@ font-weight: 500;
  // end recovery password page
  // start how-work page
  
+ .how__breadcrums {
+    min-height: 280px ;
+    .breadcrumbs__inner {
+        margin: 0 auto;
+        max-width: 390px;
+        text-align: center;
+        .breadcrumbs__title {
+            margin-top: 30px;
+            color: rgb(243, 243, 248);
+            font-size: 30px;
+            line-height: 2.0;
+            margin-bottom: 30px;
+        }
+    }
+ }
+
 
  .how-work__inner {
      padding: 100px 0;
@@ -3292,19 +3308,6 @@ img {
 
 }
  
- 
-
-.Get_Started_Now {
-    font-size: 16px;
-    font-family: "Times New Roman";
-    color: rgb(6, 116, 236);
-    line-height: 4.5;
-    text-align: center;
-    position: absolute;
-    left: 1102px;
-    top: 1916.5px;
-    z-index: 83;
-  }
   
 
  // end how-work page
