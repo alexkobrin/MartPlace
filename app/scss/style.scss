@@ -3418,6 +3418,52 @@ background-color: $blue;
   }
   
  // end price page
+ // start terms page
+
+.terms {
+   background-color: #eff1f5;
+   
+    .terms__inner {
+        padding: 0 30px 100px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        margin-top: 60px;
+   margin-bottom: 120px;
+
+        .terms__title {
+            padding-top: 40px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.333;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e8ebf0;
+            margin-bottom: 33px;
+        }
+        .terms__text {
+         @include text16;
+
+        }
+    }
+}
+.laoreet_dolore_magna_aluam_erat_volutpaterat_co {
+  font-size: 16px;
+  font-family: "Times New Roman";
+  color: rgb(85, 85, 85);
+  line-height: 1.875;
+  text-align: left;
+  position: absolute;
+  left: 420px;
+  top: 568.703px;
+  width: 1071px;
+  height: 101px;
+  z-index: 91;
+}
+
+
+ 
+
+
+ // end terms page
  
  
   
