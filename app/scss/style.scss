@@ -3173,10 +3173,11 @@ font-weight: 500;
                 border: none;
                 font-size: 15px;
                 line-height: 2.133;
-                background-color: #fff;
                 display: block;
                 background-color: $blue;
                 margin-top: 20px;
+                color: #fff;
+               
 
             }
             .login__lost {
@@ -3202,16 +3203,18 @@ font-weight: 500;
     }
    
 }
- 
-  
- 
-  
-
-
-
-
-
 // end login page
+// start register page
+.register {
+    .login__subtitle {
+        padding: 0 50px;
+    }
+    button {
+       margin-left: 50px;
+    }
+}
+
+// end register page
 
 
  
