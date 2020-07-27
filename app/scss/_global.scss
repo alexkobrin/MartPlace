@@ -216,7 +216,12 @@ input{
             left: 20px;
         }
     }
-
+@mixin text16 {
+    font-size: 16px;
+        color: rgb(85, 85, 85);
+        line-height: 1.875;
+    
+}
    
      
       

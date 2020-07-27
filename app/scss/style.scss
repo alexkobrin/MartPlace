@@ -1622,8 +1622,7 @@ button.mixitup-control-active {
             }
 
             .advantages__box-text {
-                font-size: 16px;
-                color: rgb(85, 85, 85);
+                @include text16;
             }
         }
 
@@ -1774,12 +1773,10 @@ button.mixitup-control-active {
 
             .feedback__autor-info {
                 font-size: 20px;
-
                 span {
                     padding-top: 10px;
                     display: block;
-                    color: rgb(85, 85, 85);
-                    font-size: 16px;
+                    @include text16;
                 }
             }
 
@@ -2797,9 +2794,10 @@ select {
                 li{
                     position: relative;
                     padding-left: 30px;
-                    font-size: 16px;
+                    @include text16;
                     line-height: 2.125;
-                color: rgb(85, 85, 85);
+                
+                @include text16;
                     &::before{
                         position: absolute;
                         content: '';
@@ -2915,8 +2913,7 @@ select {
                 padding-bottom: 30px;
                 color: rgb(85, 85, 85);
                 .prod-descr__item {
-                    font-size: 16px;
-                    line-height: 1.875;
+                    @include text16;
                     span{
                         font-size: 18px;
                         color: rgb(51, 51, 51);
@@ -3130,9 +3127,7 @@ font-weight: 500;
             line-height: 1.077;
         }
         .login__subtitle {
-            font-size: 16px;
-            color: rgb(85, 85, 85);
-            line-height: 1.75;
+            @include text16;
             border-bottom: 1px solid #ececec;
             text-align: center;
             padding-bottom: 30px;
@@ -3162,11 +3157,8 @@ font-weight: 500;
                 }
             }
             span{
-                font-size: 16px;
-                color: rgb(85, 85, 85);
-                line-height: 1.625;
-                padding-left: 20px;
-               
+                @include text16;
+                padding-left: 20px;               
             }
             .form__submit {
                 width: 190px;
@@ -3223,15 +3215,13 @@ font-weight: 500;
     }
     .login__subtitle {
         p{
-            font-size: 16px;
-            color: rgb(85, 85, 85);
+            @include text16;
             text-align: left;
         }       
     }
 }
  // end recovery password page
  // start how-work page
- 
  .how__breadcrums {
     min-height: 280px ;
     .breadcrumbs__inner {
@@ -3247,8 +3237,6 @@ font-weight: 500;
         }
     }
  }
-
-
  .how-work__inner {
      padding: 100px 0;
  display: flex;
@@ -3269,9 +3257,7 @@ font-weight: 500;
         margin-bottom:30px;
      }
      .how-work__text {
-        color: rgb(85, 85, 85);
-        font-size: 16px;
-        line-height: 1.875;
+       @include text16;
         margin-bottom: 25px;
      }
      .how-work__link {
@@ -3305,27 +3291,135 @@ img {
         background-color: #fff;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
     }
-
 }
- 
-  
-
  // end how-work page
+ // start price page
+ .price-plan  {
+     background-color: #eff1f5;
+     padding: 120px 0;
+     .price-plan__title {
+        font-size: 36px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-bottom: 35px;
+        
+        span {
+            color: $blue;
+        }
+     }
+     .price-plan__text {
+         margin: 0 auto;
+         max-width: 700px;
+        @include text16;
+        text-align: center;
+        margin-bottom: 60px;
+     }
+     .price-plan__inner {
+         display: flex;
+         justify-content: space-between;
+         .price-plan__card {
+             padding: 30px;
+             max-width: 360px;
+             width: 100%;
+             border-radius: 4px;
+             background-color: rgb(255, 255, 255);
+             box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+             .card__title {
+                 text-align: center;
+                font-size: 24px;
+                 font-weight: 500;
+                line-height: 1.333;
+                padding-bottom: 27px;
+                margin-bottom: 25px;
+                border-bottom: 1px solid #e8ebf0;
+             }
+             .card__price {
+                font-size: 24px;
+                line-height: 1.778;
+                text-align: center;
+                margin-bottom: 40px;
+                span,sup{
+                    font-weight: 500;
+                }
+             }
+            }
+         .card__list {
+                    font-size: 16px;
+                    line-height: 2.25;
+                    margin-bottom: 35px;
+                    li {
+                        padding-left: 25px;
+                        position: relative;
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            width: 9px;
+                            height: 9px;
+                            left: 0;
+                            top: 12px;
+                            border-radius: 50%;
+                            background-color: #c5cad4;
+                        }
+                    }
+                    .lnr-question-circle  { 
+                        padding-right: 25px;
+                        display: inline-block;
+                        position: relative;
+                        &::before {
+                            position: absolute;
+                            right: 0;
+                            font-family: 'Linearicons-Free';
+                        }
+                         span{
+                             font-weight: 500;
+                         }
+                    }
+                 }
+        .card__link {
+            width: 100%;
+            height: 50px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 2.77;
+            background-color:#ff6a6c ;
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        }     
+     }
+
+ }
+ .card-1 {
+     border-top: 3px solid #ff6a6c;
+ }
+ .price-plan__card.card-2 {
+    border-top: 3px solid $blue;
+    .card__link {
+background-color: $blue;
+    }
+ }
+ .price-plan__card.card-3 {
+    border-top: 3px solid #feb71d;
+    .card__link {
+    background-color: #feb71d;
+    }
+ }
+ 
+ ._299_00_month {
+    font-size: 18px;
+    font-family: "Quicksand";
+    color: rgb(0, 0, 0);
+    line-height: 1.778;
+    text-align: left;
+    position: absolute;
+    left: 1261px;
+    top: 754.998px;
+    z-index: 86;
+  }
+  
+ // end price page
+ 
  
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         @import 'media';
