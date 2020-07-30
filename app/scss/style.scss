@@ -2139,29 +2139,31 @@ button.mixitup-control-active {
         line-height: 70px;
         
     }
-    .ready__form {
-        position: relative;
-    }
+   
     form {
         margin-top: 20px;
-        
+        max-width: 555px;
+       margin: 0 auto;
+       position: relative;
         input {
-            width: 555px;
+            max-width: 555px;
+            width: 100%;
             height: 60px;
             padding: 0 130px 0 30px;
             border-radius: 30px;
             border: none;
             font-size: 15px;
-           
+             
             &::placeholder {
                 font-size: 15px;
                 color: rgb(116, 123, 134);
+                 
             }
         }
         button {
             position: absolute;
             content: '';
-            right: 292px;
+             right:-1px;
             width: 110px;
             height: 60px;
             font-size: 15px;
@@ -2171,6 +2173,7 @@ button.mixitup-control-active {
             color: rgb(255, 255, 255);
 
         }
+        
     }
 
 }
@@ -2711,6 +2714,7 @@ select {
           padding: 30px 30px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    max-width: 750px;
         }
 .share {
     color: #000;
@@ -2744,6 +2748,8 @@ select {
     display: flex;
     border-bottom: none;
     width: 100%;
+    max-width: 750px;
+
     span{ 
         background-color: #fff;
         border-bottom: 1px solid #dedede;
@@ -2782,6 +2788,7 @@ select {
         border-left : 1px solid #dedede;
         border-right : 1px solid #dedede;
         min-height: 100%;
+        max-width: 750px;
         }
         .page-box__title {                    
           font-size: 24px ;
