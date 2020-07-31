@@ -6,7 +6,16 @@ $ (function() {
         slidesToScroll: 1,
         prevArrow:'<button type="button" class=" slick-btn slick-prev"><img src="images/icons/chevron-left.svg" alt=""></button>',
         nextArrow:'<button type="button" class=" slick-btn slick-next"><img src="images/icons/chevron-right.svg" alt=""></button>',
-        arrows:true,        
+        arrows:true, 
+        responsive: [
+          {
+            breakpoint: 560,
+            settings: {
+              autoplay: true, 
+              arrows:false
+            }
+          }
+        ]    
       });
 
 
@@ -17,10 +26,19 @@ $ (function() {
         dots:false,
         arrows:false,
         customPaging:'20px',
-        variableWidth: true
-        
-        
-
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 1,
+              variableWidth: false,
+              customPaging:'30px',
+              
+              
+            }
+          }         
+      ]        
       });
       
 
@@ -76,7 +94,55 @@ $ (function() {
           slidesToScroll: 1,
           prevArrow:'<button type="button" class=" slick-btn slick-prev"><img src="images/icons/chevron-left.svg" alt=""></button>',
           nextArrow:'<button type="button" class=" slick-btn slick-next"><img src="images/icons/chevron-right.svg" alt=""></button>',
-          arrows:true,        
+          arrows:true, 
+          responsive: [
+            {
+              breakpoint: 1150,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                 
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                arrows:false,
+                 
+              }
+            }
+         
+        ] 
+        });
+
+        $('.news-slider').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          prevArrow:'<button type="button" class=" slick-btn slick-prev"><img src="images/icons/chevron-left.svg" alt=""></button>',
+          nextArrow:'<button type="button" class=" slick-btn slick-next"><img src="images/icons/chevron-right.svg" alt=""></button>',
+          arrows:false, 
+           
+          responsive: [
+            {
+              breakpoint: 1150,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                 
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                arrows:false,
+                 
+              }
+            }
+         
+        ] 
         });
 
         $('.lnr-dice').on('click', function(){
