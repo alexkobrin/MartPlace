@@ -3253,6 +3253,7 @@ font-weight: 500;
     width: 458px;
     height: 352px;
     object-fit: cover;  
+    margin-right: 20px;
   }
  .how-work__box {
      max-width: 470px;
@@ -3544,15 +3545,19 @@ background-color: $blue;
             padding-left: 25px;
         }
         .search__form.header__search {
+           max-width: 100%;
+            position: relative;
             input {
                   min-width: 300px;
                   height: 45px;
+                  
             }
             button {
+                position: absolute;
                 width: 70px;
                 top: 0;
                 height: 45px;
-                 right: 20px;
+                 right: 10px;
                 img {
                    margin-bottom: 15px;
                 }
@@ -3566,22 +3571,25 @@ background-color: $blue;
             box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
             background-color: #fff;
             margin-bottom: 30px;
-            .postr__title {
+            .postr__title.post__row {
                 border-bottom: 1px solid #ececec;
                  button {
                     border: none;
                     background-color: transparent;
                     font-size: 20px;
-                    
                     padding-bottom: 30px;
                     margin-top: 30px;
-                     margin-left: 25px; 
+                     margin-left: 10px; 
                     display: inline-block;
                     &.active {
                         color: $blue;
                     }
                 }
             }
+
+            
+
+          
             .post__row {
                 padding: 25px 25px;
                 border-bottom: 1px solid #ececec;
